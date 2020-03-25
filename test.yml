@@ -1,1 +1,44 @@
-{age: 28, name: Ali}
+# Key value pairs with nesting
+name: Ali
+age: 28
+address: "dwui: iodiw"
+active: true
+key: 
+    key: "value"
+    key2: 33
+    key3:
+      key: value
+      key2: value
+
+# This is a comment. YAML does not support multi-line comments.
+# You can embed a json object
+jsonObject: {key: value, key2: 33, key3: { key: value, key2: value} }
+
+# Arrays
+array:
+  - item 1
+  - item 2
+  - { key: value }
+
+# Arrays in JSON format
+jsonArray: [item, item2]
+
+# Objects array
+objectArray:
+  - key: value 
+    key2: value2
+  - key: value
+    key2: value2
+
+# Long text without newlines (but wrapping)
+longText: >
+  a very long line test test blah blah blah
+  blah blah test new line
+  blah
+
+longText_with_newlines: |
+  a very long line test test blah blah blah
+  blah blah test new line
+  blah
+
+
